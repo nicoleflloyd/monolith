@@ -1,0 +1,238 @@
+
+
+
+
+
+/*.row {
+	display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}*/
+
+body {
+	
+	width: 100%;
+	background: #d5d2d3;
+	font-family: 'Inconsolata', monospace;
+	  animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+          you could also use milliseconds (ms) or something like 2.5s 
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+}
+
+a {
+
+	text-decoration: ;
+	color: #000000;
+}
+
+hr {
+
+  color:#e4e4e4;
+}
+
+/*
+    @keyframes colorchange
+    {
+      0%   {background: #ffffff;}
+      25%  {background: #00aab5;}
+      50%  {background: #000000;}
+      75%  {background: #007279;}
+      100% {background: #ffffff;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+       0%   {background: #ffffff;}
+      25%  {background: #00aab5;}
+      50%  {background: #000000;}
+      75%  {background: #007279;}
+      100% {background: #ffffff;}
+    }
+*/
+section {
+	width:100%;
+}
+
+h1 {
+	font-size: 36px;
+	color: #000000;
+  padding: 75px;
+}
+
+h2 {
+
+	/*adding-top: 50px;*/
+	font-size: 24px;
+	color: #000000;
+}
+
+/*audio {
+	padding-bottom: 100px;
+}*/
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+	display: table;
+	width:80%;
+	margin: 0 auto;
+	background: #ffffff;
+
+	
+}
+
+
+.container-left {
+  display: table;
+  width:80%;
+  position: relative;
+  left:600px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding-bottom: 50px;
+
+
+  
+}
+
+
+
+
+/* Create two equal columns that sits next to each other */
+.column {
+/*display: table-cell;
+margin: 0 auto;
+width: 50%;*/
+
+
+  float: left;
+  width: 33.3%;
+  padding: 10px;
+ 
+}
+
+.column2 {
+/*display: table-cell;
+margin: 0 auto;
+width: 50%;*/
+
+
+  float: left;
+  width: 50%;
+  padding: 100px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container2 {
+	display: table;
+	width:80%;
+	margin: 0 auto;
+	background: #ffffff;
+
+}
+
+#player {
+	
+	/*width:50%;*/
+	width:60%;
+	 
+
+
+
+
+}
+
+
+
+#imageIcon {
+
+ padding-left: 50px;
+ padding-bottom: 150px;
+ padding-top: 100px;
+
+}
+
+#imageIcon2 {
+
+ padding-left: 450px;
+ padding-bottom: 150px;
+ padding-top: 75px;
+
+
+}
+
+#video-info {
+
+	color: #000000;
+	padding-left: 50px;
+	padding-top: 150px;
+}
+
+
+#music {
+
+	padding-top: 50px;
+}
+
+#music-only {
+
+	padding-top: 200px;
+}
+
+
+#title {
+
+	padding-top:400px;
+
+
+
+}
+
+
+#title2 {
+
+	padding-top:50px;
+
+
+
+}
+
+#title-author {
+
+
+}
+
+
+
+#book1 {
+
+padding-left: 100px;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
